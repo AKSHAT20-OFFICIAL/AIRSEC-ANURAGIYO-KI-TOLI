@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+}
+#footer {
+    height: 70px; /* the footer's total height */
+  }
+  
+  #footer-content {
+    background:linear-gradient(rgb(11, 128, 100),rgb(9, 83, 66));
+    border: 1px solid #ab47bc;
+    height: 32px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    padding: 60px;
+    align-items: center;
+}
+#footer-content h3{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    margin-top: -15px;
+}
