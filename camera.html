@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./camera.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cam">
+        <div class="space"></div>
+    </div>
+    <div id="wrapper">
+        <div id="content">
+         <center><video autoplay="true" id="videoElement"></video></center> 
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-content">
+           <center><button type="submit">
+            <a href="./finger.html">scan now</a>
+        </button></center> 
+        </div>
+    </div>
+      <script>
+          var video = document.querySelector("#videoElement");
+
+          if (navigator.mediaDevices.getUserMedia) {
+              navigator.mediaDevices.getUserMedia({ video: true })
+              .then(function (stream) {video.srcObject = stream; })
+              .catch(function (err0r) { console.log("Something went wrong!"); });
+     }
+      </script>
+</body>
+</html>

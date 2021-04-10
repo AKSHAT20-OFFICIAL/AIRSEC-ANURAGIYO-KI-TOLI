@@ -1,0 +1,48 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  #wrapper {
+    background-color: #000;
+   
+     height: 590px;
+    
+  }
+  
+  #wrapper:after {
+    content: "";
+    display: block;
+ 
+  }
+  
+  #content {
+    height: 100%;
+    border-color: white;
+    border:10px;
+    align-self: center;
+    padding: 40px;
+    
+  }
+  
+  #footer {
+    height: 70px; /* the footer's total height */
+  }
+  
+  #footer-content {
+    background:linear-gradient(rgb(11, 128, 100),rgb(9, 83, 66));
+    border: 1px solid #ab47bc;
+    height: 32px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    padding: 60px;
+    align-items: center;
+}
+#footer-content button{
+    padding:15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: black;
+    border-radius:20px;
+    color: white;
+
+}
+
